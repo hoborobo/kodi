@@ -8,7 +8,7 @@ var app = express();
 
 var Fuse = require('fuse.js')
 var Kodi = require('./kodi-connection/node.js');
-var kodi = new Kodi(process.env.192.168.1.68, process.env.8080, process.env.hoborobo, process.env.foofighters);
+var kodi = new Kodi(process.env.ip, process.env.port, process.env.user, process.env.pass);
 
 // Set option for fuzzy search
 var fuzzySearchOptions = {
